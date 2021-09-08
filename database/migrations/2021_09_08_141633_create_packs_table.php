@@ -21,8 +21,8 @@ class CreatePacksTable extends Migration
             $table->smallInteger('price')->unsigned();
             $table->tinyInteger('n_travelers')->unsigned();
             $table->text('description');
-            $table->dateTime('date_from', 0);
-            $table->dateTime('date_to', 0);
+            $table->string('date_from');
+            $table->string('date_to');
             $table->timestamps();
         });
     }
